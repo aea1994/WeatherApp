@@ -1,0 +1,311 @@
+<!doctype HTML>
+<html>
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width"> 
+		<title>Weather App</title>
+		<link rel="stylesheet" type="text/css" href="weatherApp.css">
+	</head>
+
+		<body>
+
+
+			<main>
+				<div id="dateTimeBox">
+					<div id="oneThree">
+						<div id="one">
+							<h1 class="dateTime">Today</h1>
+							<h1 class="dateTime" id="date"></h1>
+						</div>
+						<div id="three">
+							<h1 id="dateMain"> </h1>
+						</div>	
+					</div>
+							<div id="two">
+								<input id="zipbox" type="text" placeholder="enter zip">
+								<div id="plus"><img src="weatherApp/plus.png"></div>
+								<button class = "submit" onclick="gotNewPlace()">submit</button>
+							</div>	
+								
+				</div>
+				
+					<div id="centerContent">
+						<div id="condtionLogo">
+								<img src="" id="condLogo">
+						</div>
+								<div id="city">
+									<div id="centerInfo"></div>
+										<h1 id="cityMain"></h1>
+										<!-- <h1 id="stateMain"></h1> -->
+									<div id="tempM">
+										<div id="tempp">
+											<h1 id="tempMain"></h1>
+										</div>
+											<div id="degreee">
+												<img id = "degree" src="weatherApp/degree.png">
+												<h1 id="F">F</h1>
+											</div>
+									</div>	
+										<h1 id="conditionMain"></h1>
+								</div>
+										<div id="humWind">
+											<div id="dropTop">
+												<img id = "drop" src="weatherApp/drop.png">
+												<h1 id="hum"> </h1>
+											</div>
+
+											<div id="windTop">
+												<img id = "windPng" src="weatherApp/wind.png">
+												<h1 id="wind"> </h1>
+											</div>
+										</div>
+					</div>
+				</div>
+					<!-- <input id="zipbox" type="text" placeholder="enter zip"> -->
+						<!-- <button class = "submit" onclick="gotNewPlace()">submit</button> -->
+								<div class="range">
+									<div class="stepper">
+
+								      <div id="weatherBox0" class="forecast">
+								      	<div id="day0" class="day"></div>
+								      	<div id="condtionLogo0" class="condLg">
+											<img src="" id="condLogo0">
+											<div id="conditionMain"></div>
+										</div>
+										<div id="condition0" class="condit"></div>
+											<div class="highlow">
+												<div class=tempMini>
+													<div id="high0" class="highbox"></div>
+													<div class="deg"><img id = "degree" src="weatherApp/degree.png"></div>
+											      	
+										      	</div>
+											      	<div class="tempMini1">
+											      		<div id="low0" class="lowbox"></div>
+												      	<div class="deg1"><img id = "degree" src="weatherApp/degree.png"></div>
+												      	
+												    </div>
+										    </div>  
+								      </div>
+
+								       <div id="weatherBox1" class="forecast">
+								      	<div id="day1" class="day"></div>
+								      	<div id="condtionLogo1" class="condLg">
+											<img src="" id="condLogo1">
+											<div id="conditionMain"></div>
+										</div>
+										<div id="condition1" class="condit"></div>
+											<div class="highlow">
+												<div class=tempMini>
+													<div id="high1" class="highbox"></div>
+													<div class="deg"><img id = "degree" src="weatherApp/degree.png"></div>
+											      	
+										      	</div>
+											      	<div class="tempMini1">
+											      		<div id="low1" class="lowbox"></div>
+												      	<div class="deg1"><img id = "degree" src="weatherApp/degree.png"></div>
+												      	
+												    </div>
+										    </div>  
+								      </div>
+
+								      <div id="weatherBox2" class="forecast">
+								      	<div id="day2" class="day"></div>
+								      	<div id="condtionLogo2" class="condLg">
+											<img src="" id="condLogo2">
+											<div id="conditionMain"></div>
+										</div>
+										<div id="condition2" class="condit"></div>
+											<div class="highlow">
+												<div class=tempMini>
+													<div id="high2" class="highbox"></div>
+													<div class="deg"><img id = "degree" src="weatherApp/degree.png"></div>
+											      	
+										      	</div>
+											      	<div class="tempMini1">
+											      		<div id="low2" class="lowbox"></div>
+												      	<div class="deg1"><img id = "degree" src="weatherApp/degree.png"></div>
+												      	
+												    </div>
+										    </div>  
+								      </div>
+
+								      <div id="weatherBox3" class="forecast">
+								      	<div id="day3" class="day"></div>
+								      	<div id="condtionLogo3" class="condLg">
+											<img src="" id="condLogo3">
+											<div id="conditionMain" class="condit"></div>
+										</div>
+										<div id="condition3" class="condit"></div>
+											<div class="highlow">
+												<div class=tempMini>
+													<div id="high3" class="highbox"></div>
+													<div class="deg"><img id = "degree" src="weatherApp/degree.png"></div>
+											      	
+										      	</div>
+											      	<div class="tempMini1">
+											      		<div id="low3" class="lowbox"></div>
+												      	<div class="deg1"><img id = "degree" src="weatherApp/degree.png"></div>
+												      	
+												    </div>
+										    </div>  
+								      </div>
+
+								      <div id="weatherBox4" class="forecast">
+								      	<div id="day4" class="day"></div>
+								      	<div id="condtionLogo4" class="condLg">
+											<img src="" id="condLogo4">
+											<div id="conditionMain"></div>
+										</div>
+										<div id="condition4" class="condit"></div>
+											<div class="highlow">
+												<div class=tempMini>
+													<div id="high4" class="highbox"></div>
+													<div class="deg"><img id = "degree" src="weatherApp/degree.png"></div>
+											      	
+										      	</div>
+											      	<div class="tempMini1">
+											      		<div id="low4" class="lowbox"></div>
+												      	<div class="deg1"><img id = "degree" src="weatherApp/degree.png"></div>
+												      	
+												    </div>
+										    </div>  
+								      </div>
+
+								      <div id="weatherBox5" class="forecast">
+								      	<div id="day5" class="day"></div>
+								      	<div id="condtionLogo5" class="condLg">
+								      		<img src="" id="condLogo5">
+											<div id="conditionMain"></div>
+								      	</div>
+								      	<div id="condition5" class="condit"></div>
+								      		<div class="highlow">
+												<div class=tempMini>
+													<div id="high5" class="highbox"></div>
+													<div class="deg"><img id = "degree" src="weatherApp/degree.png"></div>
+											      	
+										      	</div>
+											      	<div class="tempMini1">
+											      		<div id="low5" class="lowbox"></div>
+												      	<div class="deg1"><img id = "degree" src="weatherApp/degree.png"></div>
+												      	
+												    </div>
+										    </div>  
+								      </div>
+
+								     <div id="weatherBox6" class="forecast">
+								      	<div id="day6" class="day"></div>
+								      	<div id="condtionLogo6" class="condLg">
+											<img src="" id="condLogo6">
+											<div id="conditionMain"></div>
+										</div>
+										<div id="condition6" class="condit"> </div>
+											<div class="highlow">
+												<div class=tempMini>
+													<div id="high6" class="highbox"></div>
+													<div class="deg"><img id = "degree" src="weatherApp/degree.png"></div>
+											      	
+										      	</div>
+											      	<div class="tempMini1">
+											      		<div id="low6" class="lowbox"></div>
+												      	<div class="deg1"><img id = "degree" src="weatherApp/degree.png"></div>
+												      	
+												    </div>
+										    </div>  	
+								      </div>
+
+								      <div id="weatherBox7" class="forecast">
+								      	<div id="day7" class="day"></div>
+								      	<div id="condtionLogo7" class="condLg">
+											<img src="" id="condLogo7">
+											<div id="conditionMain"></div>
+										</div>
+										<div id="condition7" class="condit"></div>
+											<div class="highlow">
+												<div class=tempMini>
+													<div id="high7" class="highbox"></div>
+													<div class="deg"><img id = "degree" src="weatherApp/degree.png"></div>
+											      	
+										      	</div>
+											      	<div class="tempMini1">
+											      		<div id="low7" class="lowbox"></div>
+												      	<div class="deg1"><img id = "degree" src="weatherApp/degree.png"></div>
+												      	
+												    </div>
+										    </div>  
+								      </div>
+
+									     <div id="weatherBox8" class="forecast">
+								      	<div id="day8" class="day"></div>
+								      	<div id="condtionLogo7" class="condLg">
+											<img src="" id="condLogo8">
+											<div id="conditionMain"></div>
+										</div>
+										<div id="condition8" class="condit"></div>
+											<div class="highlow">
+												<div class=tempMini>
+													<div id="high8" class="highbox"></div>
+													<div class="deg"><img id = "degree" src="weatherApp/degree.png"></div>
+											      	
+										      	</div>
+											      	<div class="tempMini1">
+											      		<div id="low8" class="lowbox"></div>
+												      	<div class="deg1"><img id = "degree" src="weatherApp/degree.png"></div>
+												      	
+												    </div>
+										    </div>  
+								      </div>
+
+									    <div id="weatherBox9" class="forecast">
+								      	<div id="day9" class="day"></div>
+								      	<div id="condtionLogo9" class="condLg">
+											<img src="" id="condLogo9">
+											<div id="conditionMain"></div>
+										</div>
+										<div id="condition9" class="condit"></div>
+											<div class="highlow">
+												<div class=tempMini>
+													<div id="high9" class="highbox"></div>
+													<div class="deg"><img id = "degree" src="weatherApp/degree.png"></div>
+											      	
+										      	</div>
+											      	<div class="tempMini1">
+											      		<div id="low9" class="lowbox"></div>
+												      	<div class="deg1"><img id = "degree" src="weatherApp/degree.png"></div>
+												      	
+												    </div>
+										    </div>  
+								      </div>
+
+								      
+
+								   </div>
+							
+							</div>	   
+								<div id="prevMore">
+									<div id="prev">
+										<button id="previous" onclick="previousButton()">
+										<img src="weatherApp/arrow-left.png">
+										</button>
+										<h1 id="previousForecasts">previous forecasts</h1>
+										
+									</div>
+										<div id="more">
+											<h1 id="moreForecasts">more forecasts</h1>
+											<button id="moreButton" onclick="moreButton()">
+											<img src="weatherApp/arrow-right.png">
+											</button>
+										</div>
+								</div>
+								<div id="yahoo">
+									<img src="weatherApp/yahoo.png">
+								</div>
+			</main>
+
+
+			<script src="weather.js"></script>
+
+			<script src="https://query.yahooapis.com/v1/public/yql?q=select * from weather.forecast where woeid in (select woeid from geo.places(1) where text='davis, ca')&format=json&callback=callbackFunction"></script>
+		</body>
+</html>
+
