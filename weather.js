@@ -26,19 +26,19 @@ function gotNewPlace() {
 function getConditionImage(condNumber,name) {
 
 	if(condNumber < 5){
-    	document.getElementById(name).src = "WeatherApp/rain.png";
+    	document.getElementById(name).src = "weatherApp/rain.png";
     } if(condNumber > 4 && condNumber < 13){
-    	document.getElementById(name).src = "WeatherApp/thunder.png";
+    	document.getElementById(name).src = "weatherApp/thunder.png";
     } if((condNumber > 12 && condNumber < 19) || (condNumber > 40 && condNumber < 48)){
-    	document.getElementById(name).src = "WeatherApp/snow.png";
+    	document.getElementById(name).src = "weatherApp/snow.png";
     } if(condNumber > 18 && condNumber < 32){
-    	document.getElementById(name).src = "WeatherApp/cloudy.png";
+    	document.getElementById(name).src = "weatherApp/cloudy.png";
     } if((condNumber> 31 && condNumber < 35) || condNumber == 36){
-    	document.getElementById(name).src = "WeatherApp/sunny.png";
+    	document.getElementById(name).src = "weatherApp/sunny.png";
     } if(condNumber == 35 || (condNumber > 36 && condNumber < 41)){
-    	document.getElementById(name).src = "WeatherApp/rain.png";
+    	document.getElementById(name).src = "weatherApp/rain.png";
     } if(condNumber == 44){
-    	document.getElementById(name).src = "WeatherApp/part-sun.png";
+    	document.getElementById(name).src = "weatherApp/part-sun.png";
     }
 }
 
@@ -81,25 +81,25 @@ function callbackFunction(data) {
     wind1 = wind1.split("\"");
     wind.textContent = wind1[1] + "mph";
 
-    document.getElementById("condLogo").src = "WeatherApp/part-sun.png";
+    document.getElementById("condLogo").src = "weatherApp/part-sun.png";
 
     var weatherImage = document.getElementById("condLogo");
     var conditionNum = JSON.stringify(object.query.results.channel.item.condition.code);
     conditionNum = conditionNum.split("\"");
     if(conditionNum[1] < 5){
-    	document.getElementById("condLogo").src = "WeatherApp/rain.png";
+    	document.getElementById("condLogo").src = "weatherApp/rain.png";
     } if(conditionNum[1] > 4 && conditionNum[1] < 13){
-    	document.getElementById("condLogo").src = "WeatherApp/thunder.png";
+    	document.getElementById("condLogo").src = "weatherApp/thunder.png";
     } if((conditionNum[1] > 12 && conditionNum[1] < 19) || (conditionNum[1] > 40 && conditionNum[1] < 48)){
-    	document.getElementById("condLogo").src = "WeatherApp/snow.png";
+    	document.getElementById("condLogo").src = "weatherApp/snow.png";
     } if(conditionNum[1] > 18 && conditionNum[1] < 32){
-    	document.getElementById("condLogo").src = "WeatherApp/cloudy.png";
+    	document.getElementById("condLogo").src = "weatherApp/cloudy.png";
     } if((conditionNum[1]> 31 && conditionNum[1] < 35) || conditionNum[1] == 36){
-    	document.getElementById("condLogo").src = "WeatherApp/sunny.png";
+    	document.getElementById("condLogo").src = "weatherApp/sunny.png";
     } if(conditionNum[1] == 35 || (conditionNum[1] > 36 && conditionNum[1] < 41)){
-    	document.getElementById("condLogo").src = "WeatherApp/rain.png";
+    	document.getElementById("condLogo").src = "weatherApp/rain.png";
     } if(conditionNum[1] == 44){
-    	document.getElementById("condLogo").src = "WeatherApp/part-sun.png";
+    	document.getElementById("condLogo").src = "weatherApp/part-sun.png";
     }
 
     for (var i = 0; i < 10; i++) { 
